@@ -1,0 +1,139 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+.hero-banner {
+  &__bg-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top right;
+  }
+
+  &__container {
+    height: 100%;
+  }
+
+  &__content {
+    width: 624px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 0;
+  }
+}
+
+.courses-banner {
+
+  &__container {
+    height: 100%;
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  &__image {
+    width: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 3rem;
+  }
+
+  &__content {
+    width: 50%;
+    padding: 2rem 0 4rem 0;
+  }
+
+  &__copy {
+    padding: 3rem 0px 3rem 0;
+  }
+}
+
+.group-banner {
+  background: $tertiary-color;
+  position: relative;
+
+  &__container {
+    height: 100%;
+    display: flex;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    width: 47%;
+    padding: 6.5rem 0;
+  }
+
+  &__copy {
+    padding: 3rem 0 4rem 0;
+  }
+}
+
+.team-banner {
+  
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+  }
+
+  &__members {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+
+  &__headline {
+    padding-bottom: 1rem;
+  }
+
+  &__copy {
+    padding-bottom: 3rem;
+  }
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-image {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.offer-banner {
+  background: $secondary-color;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+
+  &__container {
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

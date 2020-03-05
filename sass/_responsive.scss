@@ -1,0 +1,195 @@
+@include media-sm {
+  .logo-text {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .logo-text > a {
+    font-size: $font-size-3;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .header {
+    height: 60px;
+    z-index: 1;
+    padding: 0;
+
+    &__container {
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      visibility: hidden;
+    }
+
+    &__menu {
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      transform: translateX(100%);
+    }
+
+    &__util {
+      padding: 0;
+    }
+
+    &__social {
+      top: auto;
+      bottom: 4rem;
+      left: 1rem;
+      right: auto;
+    }
+  }
+
+  .menu-btn {
+    visibility: visible;
+  }
+
+  .main-navigation {
+    width: 100%;
+    height: 60%;
+    padding-top: 6rem;
+  }
+
+  .menu-nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+
+    &__link {
+      &::before {
+        bottom: -10px;
+      }
+    }
+  }
+
+  .hero-banner__bg-image {
+    background-position: 83% 50%;
+    position: relative;
+
+    &:before {
+      content: "";
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .hero-banner__content {
+    width: 100%;
+    padding: 3rem 0;
+    align-items: center;
+  }
+
+  .courses-banner__container {
+    flex-direction: column;
+  }
+
+  .courses-banner__image {
+    width: 100%;
+    height: 220px;
+    margin: 0;
+    padding-top: 3rem;
+  }
+
+  .courses-banner__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 0 3rem 0;
+  }
+
+  .courses-banner__copy {
+    padding: 1rem 0px 2rem 0;
+  }
+
+  .group-banner__image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+  }
+
+  .group-banner__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+  }
+
+  .group-banner__copy {
+    padding: 2rem 0 3rem 0;
+  }
+
+  .team-banner__content {
+    padding: 3rem 0;
+  }
+
+  .team-banner__members {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .offer-banner {
+    height: 100%;
+
+    &__content {
+      flex-direction: column;
+      padding: 1.5rem 0;
+    }
+  }
+
+  .headline {
+    text-align: center;
+  }
+
+  .headline--large {
+    font-size: $font-size-5;
+  }
+
+  .headline--medium {
+    font-size: $font-size-4;
+  }
+
+  .headline--small {
+    font-size: $font-size-2;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .btn--large {
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    font-size: $font-size-3;
+  }
+
+  .btn--medium,
+  .btn--medium--offer {
+    width: 40%;
+    height: 20px;
+    line-height: 20px;
+    font-size: $font-size-1;
+  }
+
+  .member-copy {
+    font-size: $font-size-2;
+  }
+
+  .copy--large {
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .copy--small {
+    font-size: $font-size-1;
+    text-align: center;
+  }
+}

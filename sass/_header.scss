@@ -1,0 +1,147 @@
+// header.scss
+.header {
+  background: #fff;
+
+  &__container {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+
+    &.open {
+      visibility: visible;
+    }
+  }
+
+  &__menu {
+    background: $primary-color;
+    display: flex;
+    padding-top: 28px;
+
+    @include transition-ease;
+
+    &.open {
+      transform: translateX(0);
+    }
+  }
+
+  &__util {
+    padding-left: 1rem;
+  }
+
+  &__social {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    padding-top: 6px;
+  }
+}
+
+.menu-nav {
+  display: flex;
+
+  a {
+    color: #707070;
+  }
+  &__item {
+    padding: 0 1rem;
+
+    &.active > a {
+      color: $primary-text-color;
+
+      &::before {
+        transform: scale(1.4, 1);
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      width: 100%;
+      height: 2px;
+      background: $secondary-color;
+      transform: scale(0, 1);
+      transform-origin: center;
+      @include transition-ease;
+    }
+
+    &:hover {
+      &::before {
+        transform: scale(1.4, 1);
+      }
+    }
+  }
+}
+
+.logo-text {
+  position: absolute;
+  top: 2rem;
+  z-index: 1;
+  font-size: 1.875rem;
+  font-weight: 700;
+  a {
+    color: #000;
+  }
+}
+
+.menu-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  z-index: 1;
+  cursor: pointer;
+  @include transition-ease;
+
+  &__burger {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: $primary-text-color;
+    @include transition-ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      width: 30px;
+      height: 2px;
+      background: $primary-text-color;
+      @include transition-ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      width: 20px;
+      height: 2px;
+      background: $primary-text-color;
+      @include transition-ease;
+    }
+
+    &.open {
+      transform: rotate(720deg);
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg) translate(6px, 6px);
+      }
+
+      &::after {
+        width: 30px;
+        transform: rotate(-45deg) translate(5px, -6px);
+      }
+    }
+  }
+}

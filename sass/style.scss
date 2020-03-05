@@ -1,0 +1,182 @@
+/*
+Theme Name: Gloss Dev Test
+Author: Ryldon Salvador
+Version: 1.0
+*/
+
+@import "config";
+@import "header";
+@import "homepage";
+@import "texts";
+@import "footer";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  color: $primary-color;
+  font-family: $base-font-family;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border: 2px solid $secondary-color;
+  border-radius: 5px;
+  color: $secondary-color;
+  font-size: $font-size-1;
+  outline: none;
+  overflow: hidden;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn--small {
+  font-size: $font-size-1;
+  padding: 8px 40px;
+  font-weight: $font-weight-medium;
+}
+
+.btn--medium {
+  background: $secondary-color;
+  color: $primary-color;
+  font-size: $font-size-2;
+  font-weight: $font-weight-regular;
+
+  display: block;
+  width: 190px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.btn--medium--offer {
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  font-size: $font-size-3;
+  font-weight: $font-weight-regular;
+
+  display: block;
+  width: 238px;
+  height: 44px;
+  line-height: 44px;
+}
+
+.btn--large {
+  background: $secondary-color;
+  color: $primary-color;
+  font-size: $font-size-4;
+  font-weight: $font-weight-bold;
+
+  display: block;
+  width: 568px;
+  height: 66px;
+  line-height: 66px;
+}
+
+.btn--fb,
+.btn--in {
+  color: $secondary-color;
+  font-size: 1.5rem;
+
+  @include transition-ease;
+
+  &:hover {
+    color: $menu-text-color;
+  }
+}
+
+.btn--fb {
+  padding-right: 1rem;
+}
+
+@import "responsive";

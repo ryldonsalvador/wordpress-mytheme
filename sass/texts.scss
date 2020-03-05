@@ -1,0 +1,64 @@
+// _typography.scss
+body {
+  color: $primary-text-color;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  line-height: 1.2;
+}
+
+a {
+  color: $menu-text-color;
+  text-decoration: none;
+}
+
+.logo-text > a {
+  color: $primary-text-color;
+  font-size: $font-size-4;
+  font-weight: $font-weight-bold;
+}
+
+.headline {
+  text-transform: capitalize;
+}
+
+.headline--large {
+  font-size: $font-size-6;
+  font-weight: $font-weight-medium;
+}
+
+.headline--medium {
+  font-size: $font-size-5;
+  font-weight: $font-weight-medium;
+}
+
+.headline--small {
+  font-size: $font-size-4;
+  font-weight: $font-weight-medium;
+}
+
+.copy--large {
+  font-size: $font-size-3;
+  font-weight: $font-weight-light;
+  padding: 3rem 3rem 3rem 0;
+}
+
+.copy--small {
+  color: $secondary-text-color;
+  font-size: $font-size-2;
+  font-weight: $font-weight-regular;
+}
+
+.member-copy {
+  font-size: $font-size-3;
+  font-weight: $font-weight-medium;
+  padding-bottom: 1rem;
+}
+
+.text-w {
+  color: $primary-color;
+}
+
+.text-b {
+  color: $primary-text-color;
+}
